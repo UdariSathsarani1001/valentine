@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️ Ishan</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle dark mode">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Music Controls -->
+    <div class="music-control">
+        <button id="musicToggle" aria-label="Toggle music">
+            <span class="play">🎵</span>
+            <span class="pause">🔇</span>
+        </button>
+    </div>
+
+    <!-- Background Particles -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Landing Screen -->
+    <section class="landing-screen active" id="landingScreen">
+        <div class="content-wrapper">
+            <h1 class="main-title glow-text">For My Love ❤️</h1>
+            <div class="envelope-container" id="envelopeContainer">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <div class="heart-seal" id="heartSeal">💖</div>
+                    </div>
+                    <div class="envelope-letter" id="letter">
+                        <div class="letter-content">
+                            <p>Click "Open My Heart" to see what's inside...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="subtitle">Ishan, I have something special for you...</p>
+            <div class="button-group">
+                <button class="btn btn-primary" id="openBtn">Open My Heart</button>
+                <button class="btn btn-secondary" id="notYetBtn">Not Yet</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="love-letter-section" id="loveLetterSection">
+        <div class="content-wrapper">
+            <button class="back-btn" id="backToStart">← Back</button>
+            <div class="letter-paper">
+                <h2 class="letter-header">Dear Ishan,</h2>
+                <div class="letter-text" id="letterText"></div>
+                <p class="letter-signature">Forever yours,<br>Udari 💕</p>
+            </div>
+            <button class="btn btn-primary navigate-btn" id="toSurprise">One Last Surprise →</button>
+        </div>
+    </section>
+
+    <!-- Surprise Section -->
+    <section class="surprise-section" id="surpriseSection">
+        <div class="content-wrapper">
+            <button class="back-btn" id="backToLetter2">← Back</button>
+            <div class="surprise-content" id="surpriseContent">
+                <div class="surprise-message">
+                    <h2 class="proposal-text">Will you be my Valentine forever? 💍</h2>
+                    <div class="button-group">
+                        <button class="btn btn-yes" id="yesBtn">Yes! 💖</button>
+                        <button class="btn btn-no" id="noBtn">No</button>
+                    </div>
+                </div>
+            </div>
+            <div class="celebration" id="celebration"></div>
+        </div>
+    </section>
+
+    <!-- Easter Egg Modal -->
+    <div class="easter-egg-modal" id="easterEggModal">
+        <div class="modal-content">
+            <p class="easter-egg-text">I love you more than bugs in my code ❤️</p>
+            <button class="btn btn-small" id="closeEasterEgg">😄 Aww!</button>
+        </div>
+    </div>
+
+    <!-- Canvas for Confetti -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="/assets/paulyudin-piano-inspirational-romantic-380709.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
