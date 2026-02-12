@@ -199,6 +199,10 @@ function celebrateYes() {
     surpriseContent.style.display = 'none';
     
     // Show celebration message
+    celebration.style.display = 'flex';
+    celebration.style.alignItems = 'center';
+    celebration.style.justifyContent = 'center';
+    
     const celebrationMsg = document.createElement('div');
     celebrationMsg.className = 'surprise-message';
     celebrationMsg.innerHTML = `
